@@ -1,5 +1,5 @@
 SELECT 
-    INET_NTOA(server.ip) AS IP, 
-    HEX(server.mac) AS MAC,
-    server.port AS Port
-FROM analysisfw.server server;
+    INET_NTOA(srv.ip) AS IP, 
+    HEX(srv.mac) AS MAC,
+    srv.srvPort AS srvPort
+FROM analysisfw.srv srv;
